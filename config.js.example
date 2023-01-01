@@ -1,0 +1,29 @@
+var Config = {}
+
+Config.Name = "DogScoop"
+Config.Port = 1080
+Config.Host = "127.0.0.1"
+
+Config.Password = "passwordtopass"
+
+Config.PreCommands = [
+    `do your mysql dumps`,
+]
+
+Config.Repos = ["resources\\RepoToPull"]
+
+/* Directory containing citizen, resources etc */
+Config.DataDirectory = "C:\\PathToFolderContaingResources"
+/* Directory containing citizen, resources etc */
+Config.BinPath = "C:\\PathToFXServer.exe"
+Config.ServerCfg = "C:\\PathToServer.cfg"
+
+Config.AutoStart = true
+Config.CmdLine = "+set onesync on +set sv_enforceGameBuild mpg9ec +set poopPassword passwordtopass +set citizen_dir citizen"
+
+Config.WatchTime = 5 
+Config.GracePeriod = 240 
+
+Config.RedirOutput = false
+
+module.exports = Config;
